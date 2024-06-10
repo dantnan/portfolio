@@ -25,7 +25,7 @@ const Hero = () => {
                     words="WordPress Sites, Made Simple" 
                     />
 
-                    <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>Hi, I'm Antnan, a professional Front-End Developer.</p>
+                    <p className='text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl'>Hi, I&apos;m Antnan, a professional Front-End Developer.</p>
 
                     <a href="#about">
                         <MagicButton 

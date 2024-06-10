@@ -1,11 +1,16 @@
 import {withSentryConfig} from '@sentry/nextjs';
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    output: 'export',
-    typescript: {
-        ignoreBuildErrors: true
-    }
-    
+  // output: 'export',
+  images: {
+    // Enable image optimization in development mode
+    // Disable it only when exporting static site
+    unoptimized: process.env.NODE_ENV === 'production',
+  },
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  // Other configurations
 };
 
 export default withSentryConfig(nextConfig, {
